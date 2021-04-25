@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="echart-pie-wrap">
+      <echart-pie :series-data="dataList" :extra-option="extraOption" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import EchartPie from "@/components/echart_pie";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    EchartPie,
+  },
+  data() {
+    return {
+      dataList: [
+        // {
+        //   name: "西瓜",
+        //   value: 20,
+        // },
+        // {
+        //   name: "橘子",
+        //   value: 13,
+        // },
+        // {
+        //   name: "杨桃",
+        //   value: 33,
+        // },
+      ],
+      extraOption: {
+        color: ["#fe883a", "#2d90d1", "#f75981", "#90e2a9"],
+      },
+    };
   },
 };
 </script>
 
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.echart-pie-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid #000;
+  margin: 20px auto;
 }
 </style>

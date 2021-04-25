@@ -1,5 +1,9 @@
 # echart-sample
 
+## 说明
+
+下载项目，本地运行查看。注意echarts版本在迭代，源码中部分代码与博客书写当时的写法有所不同。
+
 ## Project setup
 ```
 yarn install
@@ -9,16 +13,3 @@ yarn install
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
