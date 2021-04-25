@@ -45,7 +45,6 @@ export default {
   align-items: center;
   width: 90vw;
   height: 90vh;
-  border: 1px solid #000;
   margin: 20px auto;
 }
 </style>

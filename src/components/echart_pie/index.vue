@@ -1,4 +1,3 @@
-x
 <template>
   <Empty
     v-if="isSeriesEmpty"
