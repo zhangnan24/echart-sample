@@ -1,7 +1,7 @@
 <template>
   <Empty
     v-if="isSeriesEmpty"
-    description="暂无数据，请到App.js将注释的dataList数据打开"
+    description="暂无数据，请到App.vue将注释的dataList数据打开"
   />
   <chart-pie v-else v-bind="$props" />
 </template>
